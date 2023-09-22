@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: 91bc040283e6b1febc5304391c2c1cc2
   docVersion: 0.1.9
-  speakeasyVersion: 1.87.0
-  generationVersion: 2.116.0
+  speakeasyVersion: 1.89.0
+  generationVersion: 2.125.1
 generation:
   comments:
     disableComments: false
@@ -14,10 +14,10 @@ generation:
   tagNamespacingDisabled: false
 features:
   go:
-    core: 2.88.2
+    core: 2.88.4
     globalServerURLs: 2.82.0
 go:
-  version: 0.1.0
+  version: 0.1.1
   clientServerStatusCodesAsErrors: true
   maxMethodParams: 0
   packageName: github.com/speakeasy-sdks/via-go

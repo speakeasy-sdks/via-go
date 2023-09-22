@@ -7,11 +7,11 @@ package main
 import(
 	"context"
 	"log"
-	"github.com/speakeasy-sdks/via-go"
+	viago "github.com/speakeasy-sdks/via-go"
 )
 
 func main() {
-    s := via.New()
+    s := viago.New()
 
     ctx := context.Background()
     res, err := s.GetUsers(ctx)
