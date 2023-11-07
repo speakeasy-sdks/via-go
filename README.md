@@ -29,12 +29,12 @@ func main() {
 	s := viago.New()
 
 	ctx := context.Background()
-	res, err := s.Via.GetUsers(ctx)
+	res, err := s.GetUsers(ctx)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	if res.GetUsers200ApplicationJSONStrings != nil {
+	if res.Strings != nil {
 		// handle response
 	}
 }
@@ -82,8 +82,6 @@ Here's an example of one such pagination call:
 # Error Handling
 
 Handling errors in your SDK should largely match your expectations.  All operations return a response object or an error, they will never return both.  When specified by the OpenAPI spec document, the SDK will return the appropriate subclass.
-
-
 <!-- End Error Handling -->
 
 
@@ -102,7 +100,6 @@ You can override the default server globally using the `WithServerIndex` option 
 
 For example:
 
-
 ```go
 package main
 
@@ -118,12 +115,12 @@ func main() {
 	)
 
 	ctx := context.Background()
-	res, err := s.Via.GetUsers(ctx)
+	res, err := s.GetUsers(ctx)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	if res.GetUsers200ApplicationJSONStrings != nil {
+	if res.Strings != nil {
 		// handle response
 	}
 }
@@ -134,7 +131,6 @@ func main() {
 ## Override Server URL Per-Client
 
 The default server can also be overridden globally using the `WithServerURL` option when initializing the SDK client instance. For example:
-
 
 ```go
 package main
@@ -151,12 +147,12 @@ func main() {
 	)
 
 	ctx := context.Background()
-	res, err := s.Via.GetUsers(ctx)
+	res, err := s.GetUsers(ctx)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	if res.GetUsers200ApplicationJSONStrings != nil {
+	if res.Strings != nil {
 		// handle response
 	}
 }

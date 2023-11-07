@@ -123,9 +123,9 @@ func New(opts ...SDKOption) *Via {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "0.1.9",
-			SDKVersion:        "0.3.0",
-			GenVersion:        "2.172.4",
-			UserAgent:         "speakeasy-sdk/go 0.3.0 2.172.4 0.1.9 github.com/speakeasy-sdks/via-go",
+			SDKVersion:        "0.4.0",
+			GenVersion:        "2.181.1",
+			UserAgent:         "speakeasy-sdk/go 0.4.0 2.181.1 0.1.9 github.com/speakeasy-sdks/via-go",
 		},
 	}
 	for _, opt := range opts {
@@ -189,7 +189,7 @@ func (s *Via) GetUsers(ctx context.Context) (*operations.GetUsersResponse, error
 				return nil, err
 			}
 
-			res.GetUsers200ApplicationJSONStrings = out
+			res.Strings = out
 		default:
 			return nil, sdkerrors.NewSDKError(fmt.Sprintf("unknown content-type received: %s", contentType), httpRes.StatusCode, string(rawBody), httpRes)
 		}

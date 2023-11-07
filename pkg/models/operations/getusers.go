@@ -14,7 +14,7 @@ type GetUsersResponse struct {
 	// Raw HTTP response; suitable for custom response parsing
 	RawResponse *http.Response
 	// A JSON array of user names
-	GetUsers200ApplicationJSONStrings []string
+	Strings []string
 }
 
 func (o *GetUsersResponse) GetContentType() string {
@@ -38,9 +38,9 @@ func (o *GetUsersResponse) GetRawResponse() *http.Response {
 	return o.RawResponse
 }
 
-func (o *GetUsersResponse) GetGetUsers200ApplicationJSONStrings() []string {
+func (o *GetUsersResponse) GetStrings() []string {
 	if o == nil {
 		return nil
 	}
-	return o.GetUsers200ApplicationJSONStrings
+	return o.Strings
 }

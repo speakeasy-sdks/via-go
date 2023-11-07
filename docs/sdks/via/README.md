@@ -28,12 +28,12 @@ func main() {
     s := viago.New()
 
     ctx := context.Background()
-    res, err := s.Via.GetUsers(ctx)
+    res, err := s.GetUsers(ctx)
     if err != nil {
         log.Fatal(err)
     }
 
-    if res.GetUsers200ApplicationJSONStrings != nil {
+    if res.Strings != nil {
         // handle response
     }
 }

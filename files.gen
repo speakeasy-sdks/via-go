@@ -1,6 +1,7 @@
 via.go
 go.mod
 go.sum
+tests/helpers.go
 pkg/models/sdkerrors/sdkerror.go
 pkg/types/bigint.go
 pkg/types/date.go
@@ -17,8 +18,7 @@ pkg/utils/requestbody.go
 pkg/utils/retries.go
 pkg/utils/security.go
 pkg/utils/utils.go
-tests/helpers.go
-pkg/models/operations/getusers.go
+/pkg/models/operations/getusers.go
 USAGE.md
 docs/models/operations/getusersresponse.md
 docs/sdks/via/README.md
