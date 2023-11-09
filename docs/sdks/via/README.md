@@ -48,5 +48,7 @@ func main() {
 
 ### Response
 
-**[*operations.GetUsersResponse](../../models/operations/getusersresponse.md), error**
-
+**[*operations.GetUsersResponse](../../pkg/models/operations/getusersresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.SDKError | 400-600            | */*                |

@@ -20,6 +20,6 @@ pkg/utils/security.go
 pkg/utils/utils.go
 /pkg/models/operations/getusers.go
 USAGE.md
-docs/models/operations/getusersresponse.md
+docs/pkg/models/operations/getusersresponse.md
 docs/sdks/via/README.md
 .gitattributes
