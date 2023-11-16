@@ -19,9 +19,9 @@ Optional extended description in CommonMark or HTML.
 package main
 
 import(
+	viago "github.com/speakeasy-sdks/via-go"
 	"context"
 	"log"
-	viago "github.com/speakeasy-sdks/via-go"
 )
 
 func main() {

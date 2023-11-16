@@ -2,18 +2,20 @@ configVersion: 1.0.0
 management:
   docChecksum: 91bc040283e6b1febc5304391c2c1cc2
   docVersion: 0.1.9
-  speakeasyVersion: 1.116.0
-  generationVersion: 2.185.0
+  speakeasyVersion: 1.120.3
+  generationVersion: 2.192.1
 generation:
   comments: {}
   sdkClassName: via
   repoURL: https://github.com/speakeasy-sdks/via-go.git
+  usageSnippets:
+    optionalPropertyRendering: withExample
 features:
   go:
-    core: 3.1.2
+    core: 3.1.5
     globalServerURLs: 2.82.0
 go:
-  version: 0.4.1
+  version: 0.4.2
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
   imports:
