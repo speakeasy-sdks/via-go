@@ -4,16 +4,16 @@ management:
   docChecksum: 91bc040283e6b1febc5304391c2c1cc2
   docVersion: 0.1.9
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 0.5.1
-  configChecksum: 461d56624589d82e71347e0148d5a8da
+  generationVersion: 2.234.3
+  releaseVersion: 0.5.2
+  configChecksum: ccd06858e645da8981b8df909369c0a4
   repoURL: https://github.com/speakeasy-sdks/via-go.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/via-go
   published: true
 features:
   go:
-    core: 3.3.0
+    core: 3.3.1
     globalServerURLs: 2.82.1
 generatedFiles:
   - via.go
