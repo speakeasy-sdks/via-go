@@ -125,9 +125,9 @@ func New(opts ...SDKOption) *Via {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "0.1.9",
-			SDKVersion:        "0.7.0",
-			GenVersion:        "2.258.0",
-			UserAgent:         "speakeasy-sdk/go 0.7.0 2.258.0 0.1.9 github.com/speakeasy-sdks/via-go",
+			SDKVersion:        "0.7.1",
+			GenVersion:        "2.263.3",
+			UserAgent:         "speakeasy-sdk/go 0.7.1 2.263.3 0.1.9 github.com/speakeasy-sdks/via-go",
 			Hooks:             hooks.New(),
 		},
 	}
@@ -166,12 +166,12 @@ func (s *Via) GetUsers(ctx context.Context) (*operations.GetUsersResponse, error
 	req.Header.Set("Accept", "application/json")
 	req.Header.Set("User-Agent", s.sdkConfiguration.UserAgent)
 
-	client := s.sdkConfiguration.DefaultClient
-
 	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
+
+	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -194,7 +194,6 @@ func (s *Via) GetUsers(ctx context.Context) (*operations.GetUsersResponse, error
 			return nil, err
 		}
 	}
-
 	contentType := httpRes.Header.Get("Content-Type")
 
 	res := &operations.GetUsersResponse{
